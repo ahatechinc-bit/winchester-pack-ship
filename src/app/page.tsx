@@ -1,3 +1,4 @@
+import ComingSoon from "@/components/ComingSoon";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import CarrierStrip from "@/components/CarrierStrip";
@@ -137,6 +138,10 @@ const faqSchema = {
 };
 
 export default function Home() {
+  if (process.env.COMING_SOON === "true") {
+    return <ComingSoon />;
+  }
+
   return (
     <>
       <script
