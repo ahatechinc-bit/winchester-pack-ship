@@ -39,7 +39,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="py-20 px-6 bg-gray-900 dark:bg-zinc-950 border-b border-gray-800 dark:border-zinc-800">
+    <section className="py-20 px-6 bg-navy-900 dark:bg-navy-950 border-b border-navy-700 dark:border-navy-700">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12 space-y-4">

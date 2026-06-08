@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ComingSoon() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 bg-white dark:bg-zinc-950 relative overflow-hidden">
+    <main className="min-h-screen flex flex-col items-center justify-center px-6 bg-white dark:bg-navy-950 relative overflow-hidden">
       {/* Background gradient */}
       <div
         aria-hidden
@@ -26,7 +26,7 @@ export default function ComingSoon() {
             priority
           />
           <div>
-            <p className="text-2xl font-bold text-gray-900 dark:text-white tracking-tight">
+            <p className="text-2xl font-bold text-navy-900 dark:text-white tracking-tight">
               Winchester Pack &amp; Ship
             </p>
             <p className="text-sm text-gray-500 dark:text-zinc-400">
@@ -40,7 +40,7 @@ export default function ComingSoon() {
 
         {/* Headline */}
         <div className="space-y-3">
-          <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white tracking-tight">
+          <h1 className="text-5xl sm:text-6xl font-bold text-navy-900 dark:text-white tracking-tight">
             Coming <span className="text-amber-500 dark:text-amber-400">Soon</span>
           </h1>
           <p className="text-gray-600 dark:text-zinc-400 text-lg leading-relaxed">
@@ -54,7 +54,7 @@ export default function ComingSoon() {
           {["Shipping", "Custom Packing", "Printing", "Mailbox Services"].map((s) => (
             <span
               key={s}
-              className="rounded-full border border-gray-200 bg-gray-50 px-4 py-1.5 text-xs font-semibold text-gray-600 dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-300"
+              className="rounded-full border border-navy-200 bg-navy-50 px-4 py-1.5 text-xs font-semibold text-gray-600 dark:border-navy-700 dark:bg-navy-800/60 dark:text-zinc-300"
             >
               {s}
             </span>
@@ -62,8 +62,8 @@ export default function ComingSoon() {
         </div>
 
         {/* Contact */}
-        <div className="rounded-2xl border border-gray-200 bg-white/80 backdrop-blur-sm p-6 space-y-4 dark:border-zinc-800 dark:bg-zinc-900/80">
-          <p className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-widest text-xs">
+        <div className="rounded-2xl border border-navy-200 bg-white/80 backdrop-blur-sm p-6 space-y-4 dark:border-navy-700 dark:bg-navy-900/80">
+          <p className="text-sm font-semibold text-navy-900 dark:text-white uppercase tracking-widest text-xs">
             Get in touch now
           </p>
 
@@ -76,7 +76,7 @@ export default function ComingSoon() {
             </a>
             <a
               href="mailto:ahatechinc@gmail.com"
-              className="rounded-full border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-700 hover:border-gray-400 hover:text-gray-900 transition-colors dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:text-white"
+              className="rounded-full border border-navy-200 px-6 py-3 text-sm font-semibold text-gray-700 hover:border-gray-400 hover:text-navy-900 transition-colors dark:border-navy-700 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:text-white"
             >
               ✉️ Send us an email
             </a>

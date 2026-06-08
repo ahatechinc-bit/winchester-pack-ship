@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center overflow-hidden bg-white dark:bg-zinc-950">
+    <section className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center overflow-hidden bg-white dark:bg-navy-950">
       {/* Background gradient */}
       <div
         aria-hidden
@@ -17,7 +17,7 @@ export default function Hero() {
           Local Shipping Experts
         </div>
 
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-navy-900 dark:text-white leading-tight">
           Ship Anything,{" "}
           <span className="text-amber-500 dark:text-amber-400">Anywhere</span>
         </h1>
@@ -36,7 +36,7 @@ export default function Hero() {
           </a>
           <a
             href="#services"
-            className="rounded-full border border-gray-300 px-8 py-3.5 text-sm font-semibold text-gray-700 hover:border-gray-400 hover:text-gray-900 transition-colors dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:text-white"
+            className="rounded-full border border-navy-200 px-8 py-3.5 text-sm font-semibold text-gray-700 hover:border-gray-400 hover:text-navy-900 transition-colors dark:border-navy-700 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:text-white"
           >
             Our Services
           </a>

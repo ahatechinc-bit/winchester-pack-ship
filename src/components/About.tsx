@@ -7,7 +7,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 border-t border-gray-200 bg-gray-50 dark:border-zinc-800 dark:bg-zinc-950">
+    <section id="about" className="py-24 px-6 border-t border-navy-200 bg-navy-50 dark:border-navy-700 dark:bg-navy-950">
       <div className="mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text */}
@@ -15,7 +15,7 @@ export default function About() {
             <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
               About Us
             </p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-bold text-navy-900 dark:text-white leading-tight">
               Your Neighborhood<br />Shipping Store
             </h2>
             <p className="text-gray-600 leading-relaxed dark:text-zinc-400">
@@ -43,7 +43,7 @@ export default function About() {
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="rounded-2xl border border-gray-200 bg-white p-8 flex flex-col gap-2 dark:border-zinc-800 dark:bg-zinc-900"
+                className="rounded-2xl border border-navy-200 bg-white p-8 flex flex-col gap-2 dark:border-navy-700 dark:bg-navy-900"
               >
                 <span className="text-4xl font-bold text-amber-500 dark:text-amber-400">
                   {s.value}

@@ -15,7 +15,7 @@ export default function Navbar() {
   const { theme, toggle } = useTheme();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/90">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-navy-200 bg-white/90 backdrop-blur-sm dark:border-navy-700 dark:bg-navy-950/90">
       <div className="mx-auto max-w-6xl px-6 py-2 flex items-center justify-between">
 
         {/* Logo + name */}
@@ -29,7 +29,7 @@ export default function Navbar() {
             priority
           />
           <div className="flex flex-col leading-tight">
-            <span className="text-lg font-bold text-gray-900 dark:text-white tracking-tight">
+            <span className="text-lg font-bold text-navy-900 dark:text-white tracking-tight">
               Winchester
             </span>
             <span className="text-sm font-semibold text-amber-600 dark:text-amber-400 tracking-tight">
@@ -44,7 +44,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-gray-600 hover:text-gray-900 transition-colors dark:text-zinc-400 dark:hover:text-zinc-100"
+              className="text-sm text-gray-600 hover:text-navy-900 transition-colors dark:text-zinc-400 dark:hover:text-zinc-100"
             >
               {l.label}
             </a>
@@ -53,7 +53,7 @@ export default function Navbar() {
           <button
             onClick={toggle}
             aria-label="Toggle theme"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-200 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors dark:border-navy-700 dark:bg-navy-800 dark:text-zinc-300 dark:hover:bg-navy-700"
           >
             {theme === "dark" ? "☀️" : "🌙"}
           </button>
@@ -71,7 +71,7 @@ export default function Navbar() {
           <button
             onClick={toggle}
             aria-label="Toggle theme"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-navy-200 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors dark:border-navy-700 dark:bg-navy-800 dark:text-zinc-300 dark:hover:bg-navy-700"
           >
             {theme === "dark" ? "☀️" : "🌙"}
           </button>
@@ -90,13 +90,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-gray-200 bg-white px-6 py-4 flex flex-col gap-4 dark:border-zinc-800 dark:bg-zinc-950">
+        <div className="md:hidden border-t border-navy-200 bg-white px-6 py-4 flex flex-col gap-4 dark:border-navy-700 dark:bg-navy-950">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="text-gray-700 hover:text-gray-900 text-sm dark:text-zinc-300 dark:hover:text-zinc-100"
+              className="text-gray-700 hover:text-navy-900 text-sm dark:text-zinc-300 dark:hover:text-zinc-100"
             >
               {l.label}
             </a>

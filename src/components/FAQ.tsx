@@ -37,23 +37,23 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-20 px-6 border-b border-gray-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
+    <section className="py-20 px-6 border-b border-navy-200 bg-white dark:border-navy-700 dark:bg-navy-950">
       <div className="mx-auto max-w-3xl">
         <div className="text-center mb-12 space-y-3">
           <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
             FAQ
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">
             Frequently Asked Questions
           </h2>
         </div>
 
-        <div className="divide-y divide-gray-200 dark:divide-zinc-800">
+        <div className="divide-y divide-gray-200 dark:divide-navy-700">
           {faqs.map((item, i) => (
             <div key={i}>
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="flex w-full items-center justify-between gap-4 py-5 text-left text-base font-semibold text-gray-900 hover:text-amber-600 transition-colors dark:text-white dark:hover:text-amber-400"
+                className="flex w-full items-center justify-between gap-4 py-5 text-left text-base font-semibold text-navy-900 hover:text-amber-600 transition-colors dark:text-white dark:hover:text-amber-400"
                 aria-expanded={openIndex === i}
               >
                 <span>{item.q}</span>

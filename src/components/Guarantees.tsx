@@ -27,13 +27,13 @@ const guarantees = [
 
 export default function Guarantees() {
   return (
-    <section className="py-20 px-6 border-b border-gray-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
+    <section className="py-20 px-6 border-b border-navy-200 bg-white dark:border-navy-700 dark:bg-navy-950">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12 space-y-3">
           <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
             Our Promise
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">
             Our Guarantees. No Fine Print.
           </h2>
         </div>
@@ -42,10 +42,10 @@ export default function Guarantees() {
           {guarantees.map((g) => (
             <div
               key={g.title}
-              className="rounded-2xl border-2 border-gray-200 bg-white p-7 flex flex-col gap-4 hover:border-amber-400/60 transition-colors duration-200 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-amber-400/50"
+              className="rounded-2xl border-2 border-navy-200 bg-white p-7 flex flex-col gap-4 hover:border-amber-400/60 transition-colors duration-200 dark:border-navy-700 dark:bg-navy-900 dark:hover:border-amber-400/50"
             >
               <span className="text-4xl">{g.icon}</span>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{g.title}</h3>
+              <h3 className="text-lg font-semibold text-navy-900 dark:text-white">{g.title}</h3>
               <p className="text-sm text-gray-600 leading-relaxed dark:text-zinc-400">
                 {g.description}
               </p>

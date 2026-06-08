@@ -1,6 +1,6 @@
 export default function FinalCTA() {
   return (
-    <section className="relative py-24 px-6 bg-gray-900 dark:bg-zinc-950 border-t border-gray-800 dark:border-zinc-800">
+    <section className="relative py-24 px-6 bg-navy-900 dark:bg-navy-950 border-t border-navy-700 dark:border-navy-700">
       <div
         aria-hidden
         className="absolute left-1/2 top-0 -translate-x-1/2 w-96 h-32 bg-amber-400/10 blur-3xl rounded-full pointer-events-none"

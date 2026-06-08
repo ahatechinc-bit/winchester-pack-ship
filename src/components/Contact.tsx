@@ -40,10 +40,10 @@ export default function Contact() {
   }
 
   const inputClass =
-    "w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:border-amber-500 focus:outline-none transition-colors dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:placeholder-zinc-500 dark:focus:border-amber-400";
+    "w-full rounded-lg border border-navy-200 bg-white px-4 py-2.5 text-sm text-navy-900 placeholder-gray-400 focus:border-amber-500 focus:outline-none transition-colors dark:border-navy-700 dark:bg-navy-800 dark:text-white dark:placeholder-zinc-500 dark:focus:border-amber-400";
 
   return (
-    <section id="contact" className="py-24 px-6 border-t border-gray-200 bg-gray-50 dark:border-zinc-800 dark:bg-zinc-950">
+    <section id="contact" className="py-24 px-6 border-t border-navy-200 bg-navy-50 dark:border-navy-700 dark:bg-navy-950">
       <div className="mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Info */}
@@ -52,7 +52,7 @@ export default function Contact() {
               <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
                 Contact Us
               </p>
-              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
+              <h2 className="text-4xl sm:text-5xl font-bold text-navy-900 dark:text-white leading-tight">
                 Get a Free Quote
               </h2>
               <p className="text-gray-600 leading-relaxed dark:text-zinc-400">
@@ -67,21 +67,21 @@ export default function Contact() {
                 { icon: "📞", label: "Phone", value: "(540) 555-0100" },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-200 bg-white text-lg dark:border-zinc-800 dark:bg-zinc-900">
+                  <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-navy-200 bg-white text-lg dark:border-navy-700 dark:bg-navy-900">
                     {item.icon}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-gray-900 dark:text-white">{item.label}</p>
+                    <p className="text-sm font-semibold text-navy-900 dark:text-white">{item.label}</p>
                     <p className="text-sm text-gray-600 dark:text-zinc-400">{item.value}</p>
                   </div>
                 </div>
               ))}
               <div className="flex items-start gap-4">
-                <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-200 bg-white text-lg dark:border-zinc-800 dark:bg-zinc-900">
+                <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-navy-200 bg-white text-lg dark:border-navy-700 dark:bg-navy-900">
                   🕐
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900 dark:text-white">Store Hours</p>
+                  <p className="text-sm font-semibold text-navy-900 dark:text-white">Store Hours</p>
                   <p className="text-sm text-gray-600 dark:text-zinc-400">
                     Mon – Fri: 9am – 6pm<br />
                     Sat: 10am – 4pm<br />
@@ -93,11 +93,11 @@ export default function Contact() {
           </div>
 
           {/* Form */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-8 dark:border-zinc-800 dark:bg-zinc-900">
+          <div className="rounded-2xl border border-navy-200 bg-white p-8 dark:border-navy-700 dark:bg-navy-900">
             {state === "success" ? (
               <div className="flex flex-col items-center justify-center h-full min-h-64 gap-4 text-center">
                 <span className="text-5xl">✅</span>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold text-navy-900 dark:text-white">
                   Message Sent!
                 </h3>
                 <p className="text-gray-600 dark:text-zinc-400 text-sm">

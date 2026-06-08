@@ -21,10 +21,10 @@ const pains = [
 
 export default function Problem() {
   return (
-    <section className="py-20 px-6 border-b border-gray-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
+    <section className="py-20 px-6 border-b border-navy-200 bg-white dark:border-navy-700 dark:bg-navy-950">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12 space-y-3">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">
             Shipping Shouldn&apos;t Be This Hard
           </h2>
           <p className="text-gray-500 dark:text-zinc-400">Sound familiar?</p>
@@ -34,10 +34,10 @@ export default function Problem() {
           {pains.map((p) => (
             <div
               key={p.title}
-              className="rounded-2xl border border-gray-200 bg-gray-50 p-7 flex flex-col gap-4 text-center dark:border-zinc-800 dark:bg-zinc-900"
+              className="rounded-2xl border border-navy-200 bg-navy-50 p-7 flex flex-col gap-4 text-center dark:border-navy-700 dark:bg-navy-900"
             >
               <span className="text-4xl">{p.emoji}</span>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{p.title}</h3>
+              <h3 className="text-lg font-semibold text-navy-900 dark:text-white">{p.title}</h3>
               <p className="text-sm text-gray-600 leading-relaxed dark:text-zinc-400">
                 {p.description}
               </p>

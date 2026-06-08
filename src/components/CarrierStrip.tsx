@@ -24,7 +24,7 @@ const carriers = [
 
 export default function CarrierStrip() {
   return (
-    <div className="border-y border-gray-200 bg-gray-50 py-5 px-6 dark:border-zinc-800 dark:bg-zinc-900/60">
+    <div className="border-y border-navy-200 bg-navy-50 py-5 px-6 dark:border-navy-700 dark:bg-navy-900/60">
       <div className="mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10">
         <span className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-zinc-500">
           Authorized to ship with

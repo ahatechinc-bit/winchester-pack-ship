@@ -21,13 +21,13 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-20 px-6 border-b border-gray-200 bg-gray-50 dark:border-zinc-800 dark:bg-zinc-900/30">
+    <section className="py-20 px-6 border-b border-navy-200 bg-navy-50 dark:border-navy-700 dark:bg-navy-900/30">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12 space-y-3">
           <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
             Simple Process
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 dark:text-white">
             How It Works
           </h2>
           <p className="text-gray-500 dark:text-zinc-400">Three steps. One stop. Done today.</p>
@@ -39,7 +39,7 @@ export default function HowItWorks() {
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-amber-400 text-zinc-950 text-2xl font-black">
                 {s.number}
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{s.title}</h3>
+              <h3 className="text-lg font-semibold text-navy-900 dark:text-white">{s.title}</h3>
               <p className="text-sm text-gray-600 leading-relaxed max-w-xs dark:text-zinc-400">
                 {s.description}
               </p>
