@@ -17,14 +17,31 @@ export default function Hero() {
           Local Shipping Experts
         </div>
 
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-navy-900 dark:text-white leading-tight">
+        {/* Brand name — centered, prominent */}
+        <div className="space-y-1">
+          <p className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-navy-900 dark:text-white leading-none">
+            Winchester
+          </p>
+          <p className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-amber-500 dark:text-amber-400 leading-none">
+            Pack &amp; Ship
+          </p>
+        </div>
+
+        {/* Divider */}
+        <div className="flex items-center justify-center gap-4">
+          <div className="h-px w-16 bg-navy-200 dark:bg-navy-700" />
+          <span className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-zinc-500">Winchester, VA</span>
+          <div className="h-px w-16 bg-navy-200 dark:bg-navy-700" />
+        </div>
+
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-navy-900 dark:text-white leading-tight">
           Ship Anything,{" "}
           <span className="text-amber-500 dark:text-amber-400">Anywhere</span>
         </h1>
 
         <p className="text-lg sm:text-xl text-gray-600 dark:text-zinc-400 max-w-xl mx-auto leading-relaxed">
-          Winchester Pack &amp; Ship is your trusted local store for shipping,
-          printing, and mailbox services — fast, safe, and hassle-free.
+          Your trusted local store for shipping, printing, and mailbox
+          services — fast, safe, and hassle-free.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
