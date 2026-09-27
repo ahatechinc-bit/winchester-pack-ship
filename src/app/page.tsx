@@ -27,7 +27,7 @@ const localBusinessSchema = {
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "123 Main Street",
+    streetAddress: "2261 Valley Ave",
     addressLocality: "Winchester",
     addressRegion: "VA",
     postalCode: "22601",
