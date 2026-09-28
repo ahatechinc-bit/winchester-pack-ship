@@ -27,10 +27,10 @@ export default function Navbar() {
             priority
           />
           <div className="flex flex-col leading-tight">
-            <span className="text-lg font-bold text-navy-900 dark:text-white tracking-tight">
+            <span className="text-2xl font-extrabold text-navy-900 dark:text-white tracking-tight">
               Winchester
             </span>
-            <span className="text-sm font-semibold text-amber-600 dark:text-amber-400 tracking-tight">
+            <span className="text-base font-bold text-amber-600 dark:text-amber-400 tracking-tight">
               Pack &amp; Ship
             </span>
           </div>
