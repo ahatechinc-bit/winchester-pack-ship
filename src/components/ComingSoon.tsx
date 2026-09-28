@@ -26,9 +26,14 @@ export default function ComingSoon() {
             priority
           />
           <div>
-            <p className="text-3xl font-extrabold text-navy-900 dark:text-white tracking-tight">
-              Winchester Pack &amp; Ship
-            </p>
+            <div className="flex flex-col leading-tight">
+              <span className="text-3xl font-extrabold text-navy-900 tracking-tight">
+                Winchester
+              </span>
+              <span className="text-2xl font-extrabold text-amber-500 tracking-tight">
+                Pack &amp; Ship
+              </span>
+            </div>
             <p className="text-sm text-gray-500 dark:text-zinc-400">
               winchesterpackandship.com
             </p>
