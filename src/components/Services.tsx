@@ -1,4 +1,12 @@
-const services = [
+type Service = {
+  icon: string;
+  carrier: string | null;
+  title: string;
+  description: string;
+  link?: string;
+};
+
+const services: Service[] = [
   {
     icon: "📦",
     carrier: null,
@@ -19,6 +27,14 @@ const services = [
     title: "Printing",
     description:
       "Documents, labels, photos, flyers, and more. Black & white or full color — we handle all your printing needs quickly and affordably.",
+  },
+  {
+    icon: "📄",
+    carrier: null,
+    title: "Document Services",
+    description:
+      "Copy, print, scan, fax, laminate, bind, and more. Professional document services with fast turnaround — no appointment needed.",
+    link: "/document-services",
   },
   {
     icon: "📬",
@@ -94,9 +110,17 @@ export default function Services() {
                 </span>
               )}
               <h3 className="text-lg font-semibold text-navy-900 dark:text-white">{s.title}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed dark:text-zinc-400">
+              <p className="text-sm text-gray-600 leading-relaxed dark:text-zinc-400 flex-1">
                 {s.description}
               </p>
+              {s.link && (
+                <a
+                  href={s.link}
+                  className="text-xs font-semibold text-amber-600 hover:text-amber-500 transition-colors"
+                >
+                  Learn More →
+                </a>
+              )}
             </div>
           ))}
         </div>
