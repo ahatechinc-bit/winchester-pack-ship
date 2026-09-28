@@ -44,8 +44,7 @@ export default function ComingSoon() {
             Coming <span className="text-amber-500 dark:text-amber-400">Soon</span>
           </h1>
           <p className="text-gray-600 dark:text-zinc-400 text-lg leading-relaxed">
-            We&apos;re putting the finishing touches on our new website.
-            In the meantime, we&apos;re still open and ready to help.
+            We&apos;re putting the finishing touches to the store. In the meantime, feel free to give us a call or send us an email.
           </p>
         </div>
 
