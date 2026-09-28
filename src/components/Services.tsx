@@ -4,7 +4,7 @@ const services = [
     carrier: null,
     title: "Shipping",
     description:
-      "We ship with UPS, FedEx, and USPS. Drop off a pre-labeled package or let us find the best rate and carrier for you.",
+      "We ship with UPS, FedEx, USPS, and DHL. Drop off a pre-labeled package or let us find the best rate and carrier for you.",
   },
   {
     icon: "📦",
@@ -47,6 +47,13 @@ const services = [
     title: "USPS Shipping",
     description:
       "Priority Mail, First-Class, and Media Mail options. Affordable postal service for all package sizes.",
+  },
+  {
+    icon: "💻",
+    carrier: null,
+    title: "Virtual Mailbox",
+    description:
+      "Get a real street address you can use anywhere. We scan and email your mail so you can manage it from anywhere in the world.",
   },
   {
     icon: "🗃️",
