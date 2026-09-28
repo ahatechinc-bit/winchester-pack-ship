@@ -26,7 +26,7 @@ export default function ComingSoon() {
             priority
           />
           <div>
-            <p className="text-2xl font-bold text-navy-900 dark:text-white tracking-tight">
+            <p className="text-3xl font-extrabold text-navy-900 dark:text-white tracking-tight">
               Winchester Pack &amp; Ship
             </p>
             <p className="text-sm text-gray-500 dark:text-zinc-400">
