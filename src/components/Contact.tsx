@@ -90,6 +90,24 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="tel:+15405550100"
+                className="flex-1 flex items-center justify-center gap-2 rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
+              >
+                📞 Call Us Now
+              </a>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=2261+Valley+Ave,+Winchester,+VA+22601"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 rounded-full border border-navy-200 px-6 py-3 text-sm font-semibold text-navy-900 hover:border-navy-400 transition-colors"
+              >
+                🗺️ Get Directions
+              </a>
+            </div>
+
             {/* Google Map */}
             <div className="rounded-xl overflow-hidden border border-navy-200 dark:border-navy-700">
               <iframe
