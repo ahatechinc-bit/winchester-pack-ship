@@ -79,7 +79,7 @@ export default function ComingSoon() {
               📞 (540) 555-0100
             </a>
             <a
-              href="mailto:ahatechinc@gmail.com"
+              href="mailto:admin@winchesterpackandship.com"
               className="rounded-full border border-navy-200 px-6 py-3 text-sm font-semibold text-gray-700 hover:border-gray-400 hover:text-navy-900 transition-colors dark:border-navy-700 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:text-white"
             >
               ✉️ Send us an email
