@@ -73,10 +73,10 @@ export default function ComingSoon() {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="tel:+15405550100"
+              href="tel:+12029998888"
               className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
             >
-              📞 (540) 555-0100
+              📞 (202) 999-8888
             </a>
             <a
               href="mailto:admin@winchesterpackandship.com"

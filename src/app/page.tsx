@@ -22,7 +22,7 @@ const localBusinessSchema = {
   description:
     "Authorized UPS, FedEx, and USPS shipping center in Winchester, VA. Custom packing, printing, and mailbox services.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://winchesterpackandship.com",
-  telephone: "+15405550100",
+  telephone: "+12029998888",
   email: "info@winchesterpackandship.com",
   priceRange: "$$",
   address: {
