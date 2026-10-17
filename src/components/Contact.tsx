@@ -65,6 +65,7 @@ export default function Contact() {
               {[
                 { icon: "📍", label: "Address", value: "2261 Valley Ave, Winchester, VA 22601" },
                 { icon: "📞", label: "Phone", value: "(202) 999-8888" },
+                { icon: "✉️", label: "Email", value: "admin@winchesterpackandship.com" },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4">
                   <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-navy-200 bg-white text-lg dark:border-navy-700 dark:bg-navy-900">
@@ -91,12 +92,18 @@ export default function Contact() {
               </div>
             </div>
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
               <a
                 href="tel:+12029998888"
                 className="flex-1 flex items-center justify-center gap-2 rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
               >
                 📞 Call Us Now
+              </a>
+              <a
+                href="mailto:admin@winchesterpackandship.com"
+                className="flex-1 flex items-center justify-center gap-2 rounded-full border border-navy-200 px-6 py-3 text-sm font-semibold text-navy-900 hover:border-navy-400 transition-colors"
+              >
+                ✉️ Email Us
               </a>
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=2261+Valley+Ave,+Winchester,+VA+22601"
