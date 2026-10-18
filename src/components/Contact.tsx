@@ -126,7 +126,7 @@ export default function Contact() {
           </div>
 
           {/* Right — form */}
-          <div className="bg-white px-8 py-10">
+          <div className="bg-white px-8 py-8">
             {state === "success" ? (
               <div className="flex flex-col items-center justify-center h-full min-h-64 gap-4 text-center">
                 <span className="text-5xl">✅</span>
@@ -138,13 +138,13 @@ export default function Contact() {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="mb-2">
+              <form onSubmit={handleSubmit} className="space-y-3">
+                <div className="mb-1">
                   <p className="text-base font-semibold text-navy-900">Send us a message</p>
                   <p className="text-xs text-gray-400 mt-0.5">We typically respond within a few hours.</p>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-3">
                   <div className="space-y-1.5">
                     <label htmlFor="name" className="text-xs font-medium text-gray-400 uppercase tracking-wide">Name *</label>
                     <input id="name" name="name" type="text" required placeholder="Jane Smith" className={inputClass} />
@@ -155,7 +155,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-3">
                   <div className="space-y-1.5">
                     <label htmlFor="phone" className="text-xs font-medium text-gray-400 uppercase tracking-wide">Phone</label>
                     <input id="phone" name="phone" type="tel" placeholder="(540) 694-7447" className={inputClass} />
@@ -178,7 +178,7 @@ export default function Contact() {
                   <textarea
                     id="message"
                     name="message"
-                    rows={5}
+                    rows={4}
                     placeholder="Describe what you're shipping, package dimensions, weight, destination…"
                     className={`${inputClass} resize-none`}
                   />
