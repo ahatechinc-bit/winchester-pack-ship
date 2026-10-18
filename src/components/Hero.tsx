@@ -45,8 +45,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl text-gray-600 dark:text-zinc-400 max-w-xl mx-auto leading-relaxed">
-          Your trusted local store for shipping, printing, and mailbox
-          services — fast, safe, and hassle-free.
+          Your trusted local store for shipping services, professional packing, printing, and private mailbox rental in Winchester, VA — fast, safe, and hassle-free.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">

@@ -20,19 +20,23 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Your local shipping experts in Winchester, VA. Authorized UPS, FedEx & USPS drop-off. Custom packing, printing, and mailbox services. Drop off by 3 PM — ships today.",
+    "Local & family owned shipping store in Winchester, VA. Authorized UPS, FedEx, USPS & DHL drop-off. Professional packing, printing, private mailbox rental, and package drop-off services. Drop off by 3 PM — ships today.",
 
   keywords: [
-    "shipping Winchester VA",
+    "shipping services in Winchester VA",
+    "packing and shipping Winchester VA",
+    "private mailbox rental Winchester VA",
+    "package drop-off Winchester VA",
+    "printing services Winchester VA",
+    "business mailbox Winchester VA",
+    "professional packing services Winchester VA",
     "UPS drop off Winchester VA",
     "FedEx drop off Winchester VA",
     "USPS shipping Winchester",
+    "DHL shipping Winchester VA",
     "pack and ship Winchester",
-    "packing services Winchester VA",
-    "mailbox rental Winchester",
-    "print shop Winchester VA",
-    "custom packing Winchester",
     "shipping store Winchester VA",
+    "local family owned shipping Winchester",
   ],
 
   authors: [{ name: "Winchester Pack & Ship" }],

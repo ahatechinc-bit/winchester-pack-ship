@@ -43,13 +43,18 @@ export default function ComingSoon() {
         {/* Divider */}
         <div className="w-16 h-0.5 bg-amber-400 mx-auto rounded-full" />
 
+        {/* Local & Family Owned badge */}
+        <div className="inline-flex items-center gap-1.5 rounded-full border border-red-200 bg-red-50 px-4 py-1.5 text-xs font-semibold text-red-700 uppercase tracking-widest">
+          🏡 Local &amp; Family Owned
+        </div>
+
         {/* Headline */}
         <div className="space-y-3">
           <h1 className="text-5xl sm:text-6xl font-bold text-navy-900 dark:text-white tracking-tight">
             Coming <span className="text-amber-500 dark:text-amber-400">Soon</span>
           </h1>
           <p className="text-gray-600 dark:text-zinc-400 text-lg leading-relaxed">
-            We&apos;re putting the finishing touches to the store. In the meantime, feel free to give us a call or send us an email.
+            Your neighborhood destination for shipping, professional packing, private mailboxes, printing, and everyday business services. We&apos;re getting ready to serve Winchester and the surrounding communities.
           </p>
         </div>
 

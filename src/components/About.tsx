@@ -25,15 +25,14 @@ export default function About() {
             </h2>
             <p className="text-gray-600 leading-relaxed dark:text-zinc-400">
               Winchester Pack &amp; Ship has been serving our community for over
-              a decade. We're a locally owned and operated shipping store
-              dedicated to making the packing and shipping process as easy as
+              a decade. We're a local, family owned shipping store in Winchester, VA
+              dedicated to making packing and shipping services as easy as
               possible for you.
             </p>
             <p className="text-gray-600 leading-relaxed dark:text-zinc-400">
-              Whether you're sending a gift to family, returning an online
-              purchase, or shipping business inventory, our experienced staff
-              will make sure your items arrive safely and on time. We work with
-              UPS, FedEx, and USPS to find the best rate for your needs.
+              Whether you need a private mailbox rental, professional packing services,
+              a UPS or FedEx drop-off, or same-day USPS and DHL shipping — our
+              experienced staff will make sure your items arrive safely and on time.
             </p>
             <a
               href="#contact"
