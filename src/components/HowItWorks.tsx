@@ -3,7 +3,7 @@ const steps = [
     number: "1",
     title: "Walk In With Your Item",
     description:
-      "Bring it packed or unpacked — no appointment needed. We're open Monday through Saturday, 9 AM to 6 PM.",
+      "Bring it packed or unpacked — no appointment needed. We're open Monday through Friday 10 AM to 7 PM, and Saturday 10 AM to 4 PM.",
   },
   {
     number: "2",

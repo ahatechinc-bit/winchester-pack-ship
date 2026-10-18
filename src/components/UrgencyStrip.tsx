@@ -7,7 +7,7 @@ export default function UrgencyStrip() {
         </span>
         <span className="hidden sm:block text-zinc-700">|</span>
         <span className="flex items-center gap-2">
-          🕙 <span>Open Mon – Fri 9am–6pm &nbsp;·&nbsp; Sat 10am–4pm</span>
+          🕙 <span>Open Mon – Fri 10am–7pm &nbsp;·&nbsp; Sat 10am–4pm</span>
         </span>
       </div>
     </div>
