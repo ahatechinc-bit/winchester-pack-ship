@@ -43,179 +43,186 @@ export default function Contact() {
     "w-full rounded-lg border border-navy-200 bg-white px-4 py-2.5 text-sm text-navy-900 placeholder-gray-400 focus:border-amber-500 focus:outline-none transition-colors dark:border-navy-700 dark:bg-navy-800 dark:text-white dark:placeholder-zinc-500 dark:focus:border-amber-400";
 
   return (
-    <section id="contact" className="py-24 px-6 border-t border-navy-200 bg-navy-50 dark:border-navy-700 dark:bg-navy-950">
-      <div className="mx-auto max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-16">
-          {/* Info */}
-          <div className="space-y-8">
-            <div className="space-y-3">
-              <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
-                Contact Us
-              </p>
-              <h2 className="text-4xl sm:text-5xl font-bold text-navy-900 dark:text-white leading-tight">
-                Get in Touch
-              </h2>
-              <p className="text-gray-600 leading-relaxed dark:text-zinc-400">
-                Fill out the form and we'll get back to you with the best
-                shipping options and rates for your needs.
-              </p>
-            </div>
+    <section id="contact" className="border-t border-navy-200 bg-navy-50 dark:border-navy-700 dark:bg-navy-950">
 
-            <div className="space-y-4">
-              {[
-                { icon: "📍", label: "Address", value: "2261 Valley Ave, Winchester, VA 22601" },
-                { icon: "📞", label: "Phone", value: "(540) 694-7447 (540-694-SHIP)" },
-                { icon: "📠", label: "eFax", value: "(540) 694-3094" },
-                { icon: "✉️", label: "Email", value: "admin@winchesterpackandship.com" },
-              ].map((item) => (
-                <div key={item.label} className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-navy-200 bg-white text-lg dark:border-navy-700 dark:bg-navy-900">
-                    {item.icon}
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-navy-900 dark:text-white">{item.label}</p>
-                    <p className="text-sm text-gray-600 dark:text-zinc-400">{item.value}</p>
-                  </div>
-                </div>
-              ))}
-              <div className="flex items-start gap-4">
-                <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-navy-200 bg-white text-lg dark:border-navy-700 dark:bg-navy-900">
-                  🕐
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-navy-900 dark:text-white">Store Hours</p>
-                  <p className="text-sm text-gray-600 dark:text-zinc-400">
-                    Mon – Fri: 9am – 6pm<br />
-                    Sat: 10am – 4pm<br />
-                    Sun: Closed
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
-              <a
-                href="tel:+15406947447"
-                className="flex-1 flex items-center justify-center gap-2 rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
-              >
-                📞 Call Us Now
-              </a>
-              <a
-                href="mailto:admin@winchesterpackandship.com"
-                className="flex-1 flex items-center justify-center gap-2 rounded-full border border-navy-200 px-6 py-3 text-sm font-semibold text-navy-900 hover:border-navy-400 transition-colors"
-              >
-                ✉️ Email Us
-              </a>
-              <a
-                href="https://www.google.com/maps/dir/?api=1&destination=2261+Valley+Ave,+Winchester,+VA+22601"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 rounded-full border border-navy-200 px-6 py-3 text-sm font-semibold text-navy-900 hover:border-navy-400 transition-colors"
-              >
-                🗺️ Get Directions
-              </a>
-            </div>
+      {/* Section header */}
+      <div className="py-14 px-6 text-center border-b border-navy-200 dark:border-navy-700">
+        <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-2">
+          Contact Us
+        </p>
+        <h2 className="text-4xl sm:text-5xl font-bold text-navy-900 dark:text-white leading-tight mb-3">
+          Get in Touch
+        </h2>
+        <p className="text-gray-600 dark:text-zinc-400 max-w-md mx-auto">
+          Drop in, call, or send us a message — we&apos;ll get back to you fast.
+        </p>
+      </div>
 
-            {/* Google Map */}
-            <div className="rounded-xl overflow-hidden border border-navy-200 dark:border-navy-700">
-              <iframe
-                title="Winchester Pack & Ship location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0!2d-78.1633!3d39.1857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s2261+Valley+Ave%2C+Winchester%2C+VA+22601!5e0!3m2!1sen!2sus!4v1"
-                width="100%"
-                height="220"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
+      <div className="mx-auto max-w-6xl px-6 py-14 grid lg:grid-cols-2 gap-10 items-start">
+
+        {/* Left — info + map */}
+        <div className="space-y-6">
+
+          {/* Quick-action buttons */}
+          <div className="grid grid-cols-3 gap-3">
+            <a
+              href="tel:+15406947447"
+              className="flex flex-col items-center gap-1.5 rounded-2xl border border-navy-200 bg-white px-3 py-4 text-center hover:border-amber-400 hover:shadow-sm transition-all dark:border-navy-700 dark:bg-navy-900 dark:hover:border-amber-500"
+            >
+              <span className="text-2xl">📞</span>
+              <span className="text-xs font-semibold text-navy-900 dark:text-white">Call Us</span>
+              <span className="text-[11px] text-gray-500 dark:text-zinc-400">(540) 694-7447</span>
+            </a>
+            <a
+              href="mailto:admin@winchesterpackandship.com"
+              className="flex flex-col items-center gap-1.5 rounded-2xl border border-navy-200 bg-white px-3 py-4 text-center hover:border-amber-400 hover:shadow-sm transition-all dark:border-navy-700 dark:bg-navy-900 dark:hover:border-amber-500"
+            >
+              <span className="text-2xl">✉️</span>
+              <span className="text-xs font-semibold text-navy-900 dark:text-white">Email Us</span>
+              <span className="text-[11px] text-gray-500 dark:text-zinc-400">admin@winchester...</span>
+            </a>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=2261+Valley+Ave,+Winchester,+VA+22601"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center gap-1.5 rounded-2xl border border-navy-200 bg-white px-3 py-4 text-center hover:border-amber-400 hover:shadow-sm transition-all dark:border-navy-700 dark:bg-navy-900 dark:hover:border-amber-500"
+            >
+              <span className="text-2xl">🗺️</span>
+              <span className="text-xs font-semibold text-navy-900 dark:text-white">Directions</span>
+              <span className="text-[11px] text-gray-500 dark:text-zinc-400">2261 Valley Ave</span>
+            </a>
           </div>
 
-          {/* Form */}
-          <div className="rounded-2xl border border-navy-200 bg-white p-8 dark:border-navy-700 dark:bg-navy-900">
-            {state === "success" ? (
-              <div className="flex flex-col items-center justify-center h-full min-h-64 gap-4 text-center">
-                <span className="text-5xl">✅</span>
-                <h3 className="text-xl font-semibold text-navy-900 dark:text-white">
-                  Message Sent!
-                </h3>
-                <p className="text-gray-600 dark:text-zinc-400 text-sm">
-                  Thanks for reaching out. We'll get back to you shortly.
-                </p>
-                <button
-                  onClick={() => setState("idle")}
-                  className="mt-2 text-sm text-amber-600 hover:text-amber-500 transition-colors dark:text-amber-400 dark:hover:text-amber-300"
-                >
-                  Send another message
-                </button>
+          {/* Info grid */}
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              { icon: "📍", label: "Address", value: "2261 Valley Ave\nWinchester, VA 22601" },
+              { icon: "🕐", label: "Hours", value: "Mon–Fri 9am–6pm\nSat 10am–4pm · Sun Closed" },
+              { icon: "📠", label: "eFax", value: "(540) 694-3094" },
+              { icon: "✉️", label: "Email", value: "admin@winchesterpackandship.com" },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="rounded-2xl border border-navy-200 bg-white p-4 dark:border-navy-700 dark:bg-navy-900"
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-base">{item.icon}</span>
+                  <span className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-zinc-500">{item.label}</span>
+                </div>
+                <p className="text-sm text-navy-900 dark:text-white whitespace-pre-line leading-snug">{item.value}</p>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="space-y-1.5">
-                    <label htmlFor="name" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
-                      Name *
-                    </label>
-                    <input id="name" name="name" type="text" required placeholder="Jane Smith" className={inputClass} />
-                  </div>
-                  <div className="space-y-1.5">
-                    <label htmlFor="email" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
-                      Email *
-                    </label>
-                    <input id="email" name="email" type="email" required placeholder="jane@example.com" className={inputClass} />
-                  </div>
-                </div>
+            ))}
+          </div>
 
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="space-y-1.5">
-                    <label htmlFor="phone" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
-                      Phone
-                    </label>
-                    <input id="phone" name="phone" type="tel" placeholder="(540) 694-7447" className={inputClass} />
-                  </div>
-                  <div className="space-y-1.5">
-                    <label htmlFor="service" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
-                      Service *
-                    </label>
-                    <select id="service" name="service" required className={inputClass}>
-                      <option value="">Select a service…</option>
-                      <option value="shipping">Shipping (UPS / FedEx / USPS)</option>
-                      <option value="packing">Custom Packing</option>
-                      <option value="printing">Printing</option>
-                      <option value="mailbox">Mailbox Services</option>
-                      <option value="other">Other / Not Sure</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <label htmlFor="message" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
-                    Details
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    placeholder="Describe what you're shipping, package dimensions, weight, destination…"
-                    className={`${inputClass} resize-none`}
-                  />
-                </div>
-
-                {state === "error" && (
-                  <p className="text-sm text-red-500">{errorMsg}</p>
-                )}
-
-                <button
-                  type="submit"
-                  disabled={state === "submitting"}
-                  className="w-full rounded-full bg-amber-400 py-3 text-sm font-semibold text-zinc-950 hover:bg-amber-300 disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
-                >
-                  {state === "submitting" ? "Sending…" : "Send Message"}
-                </button>
-              </form>
-            )}
+          {/* Map */}
+          <div className="rounded-2xl overflow-hidden border border-navy-200 dark:border-navy-700">
+            <iframe
+              title="Winchester Pack & Ship location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0!2d-78.1633!3d39.1857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s2261+Valley+Ave%2C+Winchester%2C+VA+22601!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="240"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
+
+        {/* Right — form */}
+        <div className="rounded-2xl border border-navy-200 bg-white p-8 dark:border-navy-700 dark:bg-navy-900">
+          {state === "success" ? (
+            <div className="flex flex-col items-center justify-center h-full min-h-64 gap-4 text-center">
+              <span className="text-5xl">✅</span>
+              <h3 className="text-xl font-semibold text-navy-900 dark:text-white">
+                Message Sent!
+              </h3>
+              <p className="text-gray-600 dark:text-zinc-400 text-sm">
+                Thanks for reaching out. We&apos;ll get back to you shortly.
+              </p>
+              <button
+                onClick={() => setState("idle")}
+                className="mt-2 text-sm text-amber-600 hover:text-amber-500 transition-colors dark:text-amber-400 dark:hover:text-amber-300"
+              >
+                Send another message
+              </button>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div>
+                <p className="text-sm font-semibold text-navy-900 dark:text-white mb-1">Send us a message</p>
+                <p className="text-xs text-gray-500 dark:text-zinc-400">We typically respond within a few hours.</p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="space-y-1.5">
+                  <label htmlFor="name" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
+                    Name *
+                  </label>
+                  <input id="name" name="name" type="text" required placeholder="Jane Smith" className={inputClass} />
+                </div>
+                <div className="space-y-1.5">
+                  <label htmlFor="email" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
+                    Email *
+                  </label>
+                  <input id="email" name="email" type="email" required placeholder="jane@example.com" className={inputClass} />
+                </div>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="space-y-1.5">
+                  <label htmlFor="phone" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
+                    Phone
+                  </label>
+                  <input id="phone" name="phone" type="tel" placeholder="(540) 694-7447" className={inputClass} />
+                </div>
+                <div className="space-y-1.5">
+                  <label htmlFor="service" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
+                    Service *
+                  </label>
+                  <select id="service" name="service" required className={inputClass}>
+                    <option value="">Select a service…</option>
+                    <option value="shipping">Shipping (UPS / FedEx / USPS)</option>
+                    <option value="packing">Custom Packing</option>
+                    <option value="printing">Printing</option>
+                    <option value="mailbox">Mailbox Services</option>
+                    <option value="other">Other / Not Sure</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="space-y-1.5">
+                <label htmlFor="message" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
+                  Details
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={5}
+                  placeholder="Describe what you're shipping, package dimensions, weight, destination…"
+                  className={`${inputClass} resize-none`}
+                />
+              </div>
+
+              {state === "error" && (
+                <p className="text-sm text-red-500">{errorMsg}</p>
+              )}
+
+              <button
+                type="submit"
+                disabled={state === "submitting"}
+                className="w-full rounded-full bg-amber-400 py-3 text-sm font-semibold text-zinc-950 hover:bg-amber-300 disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
+              >
+                {state === "submitting" ? "Sending…" : "Send Message"}
+              </button>
+
+              <p className="text-center text-xs text-gray-400 dark:text-zinc-500">
+                Prefer to call? <a href="tel:+15406947447" className="text-amber-600 dark:text-amber-400 hover:underline">(540) 694-7447</a>
+              </p>
+            </form>
+          )}
+        </div>
+
       </div>
     </section>
   );
