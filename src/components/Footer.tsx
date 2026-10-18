@@ -8,6 +8,9 @@ export default function Footer() {
             Winchester Pack &amp; Ship
           </span>
           <span className="text-xs text-gray-500">Winchester, VA · winchesterpackandship.com</span>
+          <span className="inline-flex items-center gap-1 text-xs text-red-400">
+            🏡 Local & Family Owned Business
+          </span>
         </div>
 
         <div className="flex gap-6">

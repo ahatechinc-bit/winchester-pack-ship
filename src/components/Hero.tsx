@@ -13,8 +13,13 @@ export default function Hero() {
       />
 
       <div className="max-w-3xl mx-auto space-y-6">
-        <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-50 px-4 py-1.5 text-xs font-medium text-amber-700 uppercase tracking-widest dark:bg-amber-400/10 dark:border-amber-400/30 dark:text-amber-400">
-          Local Shipping Experts
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-50 px-4 py-1.5 text-xs font-medium text-amber-700 uppercase tracking-widest dark:bg-amber-400/10 dark:border-amber-400/30 dark:text-amber-400">
+            Local Shipping Experts
+          </div>
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-red-200 bg-red-50 px-4 py-1.5 text-xs font-semibold text-red-700 uppercase tracking-widest">
+            🏡 Local & Family Owned
+          </div>
         </div>
 
         {/* Brand name — centered, prominent */}

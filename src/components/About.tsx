@@ -15,6 +15,11 @@ export default function About() {
             <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
               About Us
             </p>
+            <div className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-50 px-4 py-2 dark:border-red-900/40 dark:bg-red-950/30">
+              <span className="text-lg">🏡</span>
+              <span className="text-sm font-semibold text-red-700 dark:text-red-400">Proudly Local & Family Owned</span>
+              <span className="text-lg">❤️</span>
+            </div>
             <h2 className="text-4xl sm:text-5xl font-bold text-navy-900 dark:text-white leading-tight">
               Your Neighborhood<br />Shipping Store
             </h2>

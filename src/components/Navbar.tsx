@@ -33,6 +33,9 @@ export default function Navbar() {
             <span className="text-base font-bold text-amber-600 dark:text-amber-400 tracking-tight">
               Pack &amp; Ship
             </span>
+            <span className="mt-0.5 inline-flex items-center gap-1 text-[10px] font-semibold text-red-600 uppercase tracking-wide">
+              🏡 Local & Family Owned
+            </span>
           </div>
         </a>
 
