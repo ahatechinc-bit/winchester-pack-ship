@@ -126,7 +126,7 @@ export default function Contact() {
           </div>
 
           {/* Right — form */}
-          <div className="bg-white px-8 py-8 flex flex-col justify-center">
+          <div className="bg-white px-8 py-8 flex flex-col">
             {state === "success" ? (
               <div className="flex flex-col items-center justify-center h-full min-h-64 gap-4 text-center">
                 <span className="text-5xl">✅</span>
@@ -197,6 +197,29 @@ export default function Contact() {
                 <p className="text-center text-xs text-gray-400">
                   Prefer to call? <a href="tel:+15406947447" className="text-amber-600 hover:underline">(540) 694-7447</a>
                 </p>
+
+                {/* Trust signals */}
+                <div className="pt-2 border-t border-gray-100 grid grid-cols-3 gap-3 text-center">
+                  {[
+                    { icon: "⚡", text: "Fast response" },
+                    { icon: "💰", text: "Free estimates" },
+                    { icon: "🚶", text: "Walk-ins welcome" },
+                  ].map((t) => (
+                    <div key={t.text} className="flex flex-col items-center gap-1">
+                      <span className="text-xl">{t.icon}</span>
+                      <span className="text-[11px] font-medium text-gray-500 leading-tight">{t.text}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Local badge */}
+                <div className="rounded-xl bg-amber-50 border border-amber-100 px-4 py-3 flex items-center gap-3">
+                  <span className="text-2xl shrink-0">🏡</span>
+                  <div>
+                    <p className="text-xs font-semibold text-amber-800">Local & Family Owned</p>
+                    <p className="text-xs text-amber-700 leading-snug">You&apos;re talking to real people in Winchester — not a call center.</p>
+                  </div>
+                </div>
               </form>
             )}
           </div>
