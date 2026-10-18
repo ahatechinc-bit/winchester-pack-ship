@@ -61,57 +61,49 @@ export default function Contact() {
       <div className="mx-auto max-w-6xl px-6 py-14 grid lg:grid-cols-2 gap-10 items-start">
 
         {/* Left — info + map */}
-        <div className="space-y-6">
+        <div className="space-y-5">
 
-          {/* Quick-action buttons */}
+          {/* Contact details */}
+          <div className="rounded-2xl border border-navy-200 bg-white divide-y divide-navy-100 dark:border-navy-700 dark:bg-navy-900 dark:divide-navy-800">
+            {[
+              { icon: "📍", label: "Address", value: "2261 Valley Ave, Winchester, VA 22601" },
+              { icon: "📞", label: "Phone", value: "(540) 694-7447  ·  540-694-SHIP" },
+              { icon: "📠", label: "eFax", value: "(540) 694-3094" },
+              { icon: "✉️", label: "Email", value: "admin@winchesterpackandship.com" },
+              { icon: "🕐", label: "Hours", value: "Mon – Fri  10am – 7pm\nSat  10am – 4pm  ·  Sun  Closed" },
+            ].map((item) => (
+              <div key={item.label} className="flex items-start gap-4 px-5 py-4">
+                <span className="text-lg mt-0.5 shrink-0">{item.icon}</span>
+                <div>
+                  <p className="text-[11px] font-semibold uppercase tracking-widest text-gray-400 dark:text-zinc-500 mb-0.5">{item.label}</p>
+                  <p className="text-sm text-navy-900 dark:text-white whitespace-pre-line leading-snug">{item.value}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Action buttons */}
           <div className="grid grid-cols-3 gap-3">
             <a
               href="tel:+15406947447"
-              className="flex flex-col items-center gap-1.5 rounded-2xl border border-navy-200 bg-white px-3 py-4 text-center hover:border-amber-400 hover:shadow-sm transition-all dark:border-navy-700 dark:bg-navy-900 dark:hover:border-amber-500"
+              className="flex items-center justify-center gap-2 rounded-xl bg-amber-400 px-3 py-3 text-xs font-semibold text-zinc-950 hover:bg-amber-300 transition-colors text-center"
             >
-              <span className="text-2xl">📞</span>
-              <span className="text-xs font-semibold text-navy-900 dark:text-white">Call Us</span>
-              <span className="text-[11px] text-gray-500 dark:text-zinc-400">(540) 694-7447</span>
+              📞 Call
             </a>
             <a
               href="mailto:admin@winchesterpackandship.com"
-              className="flex flex-col items-center gap-1.5 rounded-2xl border border-navy-200 bg-white px-3 py-4 text-center hover:border-amber-400 hover:shadow-sm transition-all dark:border-navy-700 dark:bg-navy-900 dark:hover:border-amber-500"
+              className="flex items-center justify-center gap-2 rounded-xl border border-navy-200 bg-white px-3 py-3 text-xs font-semibold text-navy-900 hover:border-amber-400 transition-colors dark:border-navy-700 dark:bg-navy-900 dark:text-white"
             >
-              <span className="text-2xl">✉️</span>
-              <span className="text-xs font-semibold text-navy-900 dark:text-white">Email Us</span>
-              <span className="text-[11px] text-gray-500 dark:text-zinc-400">admin@winchester...</span>
+              ✉️ Email
             </a>
             <a
               href="https://www.google.com/maps/dir/?api=1&destination=2261+Valley+Ave,+Winchester,+VA+22601"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1.5 rounded-2xl border border-navy-200 bg-white px-3 py-4 text-center hover:border-amber-400 hover:shadow-sm transition-all dark:border-navy-700 dark:bg-navy-900 dark:hover:border-amber-500"
+              className="flex items-center justify-center gap-2 rounded-xl border border-navy-200 bg-white px-3 py-3 text-xs font-semibold text-navy-900 hover:border-amber-400 transition-colors dark:border-navy-700 dark:bg-navy-900 dark:text-white"
             >
-              <span className="text-2xl">🗺️</span>
-              <span className="text-xs font-semibold text-navy-900 dark:text-white">Directions</span>
-              <span className="text-[11px] text-gray-500 dark:text-zinc-400">2261 Valley Ave</span>
+              🗺️ Directions
             </a>
-          </div>
-
-          {/* Info grid */}
-          <div className="grid grid-cols-2 gap-3">
-            {[
-              { icon: "📍", label: "Address", value: "2261 Valley Ave\nWinchester, VA 22601" },
-              { icon: "🕐", label: "Hours", value: "Mon–Fri 9am–6pm\nSat 10am–4pm · Sun Closed" },
-              { icon: "📠", label: "eFax", value: "(540) 694-3094" },
-              { icon: "✉️", label: "Email", value: "admin@winchesterpackandship.com" },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="rounded-2xl border border-navy-200 bg-white p-4 dark:border-navy-700 dark:bg-navy-900"
-              >
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-base">{item.icon}</span>
-                  <span className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-zinc-500">{item.label}</span>
-                </div>
-                <p className="text-sm text-navy-900 dark:text-white whitespace-pre-line leading-snug">{item.value}</p>
-              </div>
-            ))}
           </div>
 
           {/* Map */}
@@ -120,7 +112,7 @@ export default function Contact() {
               title="Winchester Pack & Ship location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0!2d-78.1633!3d39.1857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s2261+Valley+Ave%2C+Winchester%2C+VA+22601!5e0!3m2!1sen!2sus!4v1"
               width="100%"
-              height="240"
+              height="220"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"

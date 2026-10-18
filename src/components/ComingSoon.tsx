@@ -92,7 +92,7 @@ export default function ComingSoon() {
           </div>
 
           <p className="text-xs text-gray-400 dark:text-zinc-500">
-            Mon – Fri 9am–6pm &nbsp;·&nbsp; Sat 10am–4pm &nbsp;·&nbsp; Winchester, VA
+            Mon – Fri 10am–7pm &nbsp;·&nbsp; Sat 10am–4pm &nbsp;·&nbsp; Winchester, VA
           </p>
           <p className="text-xs text-gray-400 dark:text-zinc-500">
             📍 2261 Valley Ave, Winchester, VA 22601
