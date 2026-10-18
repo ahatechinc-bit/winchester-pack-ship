@@ -22,7 +22,7 @@ export default function FinalCTA() {
             href="#contact"
             className="rounded-full bg-amber-400 px-8 py-3.5 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
           >
-            Get a Free Quote
+            Get in Touch
           </a>
           <a
             href="tel:+15406947447"

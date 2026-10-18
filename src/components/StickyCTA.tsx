@@ -25,7 +25,7 @@ export default function StickyCTA() {
           href="#contact"
           className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 shadow-lg hover:bg-amber-300 transition-colors"
         >
-          Get a Free Quote →
+          Get in Touch →
         </a>
         <a
           href="tel:+15406947447"
@@ -47,7 +47,7 @@ export default function StickyCTA() {
           href="#contact"
           className="flex-1 rounded-full bg-amber-400 py-3 text-sm font-semibold text-zinc-950 text-center hover:bg-amber-300 transition-colors"
         >
-          Get a Quote
+          Get in Touch
         </a>
       </div>
     </>

@@ -53,7 +53,7 @@ export default function Contact() {
                 Contact Us
               </p>
               <h2 className="text-4xl sm:text-5xl font-bold text-navy-900 dark:text-white leading-tight">
-                Get a Free Quote
+                Get in Touch
               </h2>
               <p className="text-gray-600 leading-relaxed dark:text-zinc-400">
                 Fill out the form and we'll get back to you with the best

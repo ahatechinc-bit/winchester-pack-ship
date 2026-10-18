@@ -117,7 +117,7 @@ export default function DocumentServicesPage() {
                 href="/#contact"
                 className="rounded-full border border-navy-200 px-8 py-3.5 text-sm font-semibold text-navy-900 hover:border-navy-400 transition-colors"
               >
-                Get a Free Quote
+                Get in Touch
               </a>
             </div>
           </div>
