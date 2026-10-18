@@ -126,7 +126,7 @@ export default function Contact() {
           </div>
 
           {/* Right — form */}
-          <div className="bg-white px-8 py-8">
+          <div className="bg-white px-8 py-8 flex flex-col justify-center">
             {state === "success" ? (
               <div className="flex flex-col items-center justify-center h-full min-h-64 gap-4 text-center">
                 <span className="text-5xl">✅</span>
