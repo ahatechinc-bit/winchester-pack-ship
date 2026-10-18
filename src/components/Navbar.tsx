@@ -55,7 +55,7 @@ export default function Navbar() {
             href="#contact"
             className="rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
           >
-            Get a Quote
+            Get in Touch
           </a>
         </nav>
 
@@ -91,7 +91,7 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className="rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-zinc-950 text-center hover:bg-amber-300 transition-colors"
           >
-            Get a Quote
+            Get in Touch
           </a>
         </div>
       )}
