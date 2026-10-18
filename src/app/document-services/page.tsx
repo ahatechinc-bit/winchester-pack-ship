@@ -108,7 +108,7 @@ export default function DocumentServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
               <a
-                href="tel:+12029998888"
+                href="tel:+15406947447"
                 className="rounded-full bg-amber-400 px-8 py-3.5 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
               >
                 📞 Call Us Now
@@ -198,10 +198,10 @@ export default function DocumentServicesPage() {
             <p className="text-zinc-800">Walk in today — no appointment needed. We're here to help.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
               <a
-                href="tel:+12029998888"
+                href="tel:+15406947447"
                 className="rounded-full bg-navy-900 px-8 py-3.5 text-sm font-semibold text-white hover:bg-navy-800 transition-colors"
               >
-                📞 (202) 999-8888
+                📞 (540) 694-7447
               </a>
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=2261+Valley+Ave,+Winchester,+VA+22601"

@@ -64,7 +64,8 @@ export default function Contact() {
             <div className="space-y-4">
               {[
                 { icon: "📍", label: "Address", value: "2261 Valley Ave, Winchester, VA 22601" },
-                { icon: "📞", label: "Phone", value: "(202) 999-8888" },
+                { icon: "📞", label: "Phone", value: "(540) 694-7447 (540-694-SHIP)" },
+                { icon: "📠", label: "eFax", value: "(540) 694-3094" },
                 { icon: "✉️", label: "Email", value: "admin@winchesterpackandship.com" },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4">
@@ -94,7 +95,7 @@ export default function Contact() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
               <a
-                href="tel:+12029998888"
+                href="tel:+15406947447"
                 className="flex-1 flex items-center justify-center gap-2 rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
               >
                 📞 Call Us Now
@@ -170,7 +171,7 @@ export default function Contact() {
                     <label htmlFor="phone" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">
                       Phone
                     </label>
-                    <input id="phone" name="phone" type="tel" placeholder="(202) 999-8888" className={inputClass} />
+                    <input id="phone" name="phone" type="tel" placeholder="(540) 694-7447" className={inputClass} />
                   </div>
                   <div className="space-y-1.5">
                     <label htmlFor="service" className="text-xs font-medium text-gray-500 uppercase tracking-wide dark:text-zinc-400">

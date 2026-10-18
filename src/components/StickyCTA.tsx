@@ -28,7 +28,7 @@ export default function StickyCTA() {
           Get a Free Quote →
         </a>
         <a
-          href="tel:+12029998888"
+          href="tel:+15406947447"
           className="rounded-full border border-navy-200 bg-white/95 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-gray-800 shadow-lg hover:border-gray-400 transition-colors text-center dark:border-navy-700 dark:bg-navy-900/95 dark:text-zinc-200 dark:hover:border-zinc-500"
         >
           📞 Call Us
@@ -38,7 +38,7 @@ export default function StickyCTA() {
       {/* Mobile: full-width bar at bottom */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex gap-2 p-3 bg-white/95 backdrop-blur-sm border-t border-navy-200 dark:bg-navy-950/95 dark:border-navy-700">
         <a
-          href="tel:+12029998888"
+          href="tel:+15406947447"
           className="flex-1 rounded-full border border-navy-200 py-3 text-sm font-semibold text-gray-800 text-center hover:border-gray-400 transition-colors dark:border-navy-700 dark:text-zinc-200"
         >
           📞 Call Us
