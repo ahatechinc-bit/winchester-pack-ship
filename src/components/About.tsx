@@ -1,10 +1,3 @@
-const stats = [
-  { value: "10+", label: "Years in Business" },
-  { value: "3", label: "Carrier Partners" },
-  { value: "1000s", label: "Packages Shipped" },
-  { value: "5★", label: "Customer Rating" },
-];
-
 export default function About() {
   return (
     <section id="about" className="py-24 px-6 border-t border-navy-200 bg-navy-50 dark:border-navy-700 dark:bg-navy-950">
@@ -24,8 +17,7 @@ export default function About() {
               Your Neighborhood<br />Shipping Store
             </h2>
             <p className="text-gray-600 leading-relaxed dark:text-zinc-400">
-              Winchester Pack &amp; Ship has been serving our community for over
-              a decade. We're a local, family owned shipping store in Winchester, VA
+              Winchester Pack &amp; Ship is a local, family owned shipping store in Winchester, VA
               dedicated to making packing and shipping services as easy as
               possible for you.
             </p>
@@ -42,17 +34,20 @@ export default function About() {
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 gap-4">
-            {stats.map((s) => (
-              <div
-                key={s.label}
-                className="rounded-2xl border border-navy-200 bg-white p-8 flex flex-col gap-2 dark:border-navy-700 dark:bg-navy-900"
-              >
-                <span className="text-4xl font-bold text-amber-500 dark:text-amber-400">
-                  {s.value}
-                </span>
-                <span className="text-sm text-gray-600 dark:text-zinc-400">{s.label}</span>
+          {/* Right — what we offer */}
+          <div className="space-y-3">
+            {[
+              { icon: "📦", title: "UPS · FedEx · USPS · DHL", desc: "Authorized drop-off for all major carriers. We compare rates so you get the best deal." },
+              { icon: "🎁", title: "Professional Packing", desc: "Fragile, oversized, odd-shaped — we pack it right the first time." },
+              { icon: "📬", title: "Private Mailbox Rental", desc: "A real street address for your home or business, with package acceptance." },
+              { icon: "🖨️", title: "Print, Copy & Document Services", desc: "Copies, scanning, faxing, laminating, binding — walk in, no appointment needed." },
+            ].map((item) => (
+              <div key={item.title} className="flex items-start gap-4 rounded-2xl border border-navy-200 bg-white px-5 py-4 dark:border-navy-700 dark:bg-navy-900">
+                <span className="text-2xl shrink-0 mt-0.5">{item.icon}</span>
+                <div>
+                  <p className="text-sm font-semibold text-navy-900 dark:text-white">{item.title}</p>
+                  <p className="text-xs text-gray-500 dark:text-zinc-400 mt-0.5 leading-relaxed">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
