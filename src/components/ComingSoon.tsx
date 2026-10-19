@@ -1,104 +1,132 @@
+"use client";
+
 import Image from "next/image";
 
 export default function ComingSoon() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 bg-white dark:bg-navy-950 relative overflow-hidden">
-      {/* Background gradient */}
-      <div
-        aria-hidden
-        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(245,158,11,0.10),transparent)] dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(245,158,11,0.12),transparent)]"
-      />
-      {/* Grid pattern */}
-      <div
-        aria-hidden
-        className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:48px_48px] opacity-60 dark:opacity-20"
-      />
+    <>
+      <main className="min-h-screen flex flex-col items-center justify-center px-6 pb-20 md:pb-6 bg-white dark:bg-navy-950 relative overflow-hidden">
+        {/* Background gradient */}
+        <div
+          aria-hidden
+          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(245,158,11,0.10),transparent)] dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(245,158,11,0.12),transparent)]"
+        />
+        {/* Grid pattern */}
+        <div
+          aria-hidden
+          className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:48px_48px] opacity-60 dark:opacity-20"
+        />
 
-      <div className="max-w-lg w-full text-center space-y-8">
-        {/* Logo */}
-        <div className="flex flex-col items-center gap-3">
-          <Image
-            src="/logo.png"
-            alt="Winchester Pack & Ship"
-            width={140}
-            height={140}
-            className="object-contain"
-            priority
-          />
-          <div>
-            <div className="flex flex-col leading-tight">
-              <span className="text-3xl font-extrabold text-navy-900 tracking-tight">
-                Winchester
-              </span>
-              <span className="text-2xl font-extrabold text-amber-500 tracking-tight">
-                Pack &amp; Ship
-              </span>
+        <div className="max-w-lg w-full text-center space-y-8">
+          {/* Logo */}
+          <div className="flex flex-col items-center gap-3">
+            <Image
+              src="/logo.png"
+              alt="Winchester Pack & Ship"
+              width={140}
+              height={140}
+              className="object-contain"
+              priority
+            />
+            <div>
+              <div className="flex flex-col leading-tight">
+                <span className="text-3xl font-extrabold text-navy-900 dark:text-white tracking-tight">
+                  Winchester
+                </span>
+                <span className="text-2xl font-extrabold text-amber-500 tracking-tight">
+                  Pack &amp; Ship
+                </span>
+              </div>
+              <p className="text-sm text-gray-500 dark:text-zinc-400">
+                winchesterpackandship.com
+              </p>
             </div>
-            <p className="text-sm text-gray-500 dark:text-zinc-400">
-              winchesterpackandship.com
+          </div>
+
+          {/* Divider */}
+          <div className="w-16 h-0.5 bg-amber-400 mx-auto rounded-full" />
+
+          {/* Local & Family Owned badge */}
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-red-200 bg-red-50 px-4 py-1.5 text-xs font-semibold text-red-700 uppercase tracking-widest dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-400">
+            🏡 Local &amp; Family Owned
+          </div>
+
+          {/* Headline */}
+          <div className="space-y-3">
+            <h1 className="text-5xl sm:text-6xl font-bold text-navy-900 dark:text-white tracking-tight">
+              Coming <span className="text-amber-500 dark:text-amber-400">Soon</span>
+            </h1>
+            <p className="text-gray-600 dark:text-zinc-400 text-lg leading-relaxed">
+              Your neighborhood destination for shipping, professional packing, private mailboxes, printing, and everyday business services. We&apos;re getting ready to serve Winchester and the surrounding communities.
+            </p>
+          </div>
+
+          {/* Services preview */}
+          <div className="flex flex-wrap justify-center gap-2">
+            {["Shipping", "Custom Packing", "Printing", "Mailbox Services"].map((s) => (
+              <span
+                key={s}
+                className="rounded-full border border-navy-200 bg-navy-50 px-4 py-1.5 text-xs font-semibold text-gray-600 dark:border-navy-700 dark:bg-navy-800/60 dark:text-zinc-300"
+              >
+                {s}
+              </span>
+            ))}
+          </div>
+
+          {/* Contact card — visible on desktop, hidden on mobile (sticky bar handles it) */}
+          <div className="hidden sm:block rounded-2xl border border-navy-200 bg-white/80 backdrop-blur-sm p-6 space-y-4 dark:border-navy-700 dark:bg-navy-900/80">
+            <p className="text-xs font-semibold uppercase tracking-widest text-navy-900 dark:text-white">
+              Get in touch now
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a
+                href="tel:+15406947447"
+                className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
+              >
+                📞 (540) 694-7447
+              </a>
+              <a
+                href="mailto:admin@winchesterpackandship.com"
+                className="rounded-full border border-navy-200 px-6 py-3 text-sm font-semibold text-gray-700 hover:border-gray-400 hover:text-navy-900 transition-colors dark:border-navy-700 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:text-white"
+              >
+                ✉️ Send us an email
+              </a>
+            </div>
+            <p className="text-xs text-gray-400 dark:text-zinc-500">
+              Mon – Fri 10am–7pm &nbsp;·&nbsp; Sat 10am–4pm &nbsp;·&nbsp; Winchester, VA
+            </p>
+            <p className="text-xs text-gray-400 dark:text-zinc-500">
+              📍 2261 Valley Ave, Winchester, VA 22601
+            </p>
+          </div>
+
+          {/* Mobile-only address + hours */}
+          <div className="sm:hidden space-y-1">
+            <p className="text-xs text-gray-400 dark:text-zinc-500">
+              Mon – Fri 10am–7pm &nbsp;·&nbsp; Sat 10am–4pm
+            </p>
+            <p className="text-xs text-gray-400 dark:text-zinc-500">
+              📍 2261 Valley Ave, Winchester, VA 22601
             </p>
           </div>
         </div>
+      </main>
 
-        {/* Divider */}
-        <div className="w-16 h-0.5 bg-amber-400 mx-auto rounded-full" />
-
-        {/* Local & Family Owned badge */}
-        <div className="inline-flex items-center gap-1.5 rounded-full border border-red-200 bg-red-50 px-4 py-1.5 text-xs font-semibold text-red-700 uppercase tracking-widest">
-          🏡 Local &amp; Family Owned
-        </div>
-
-        {/* Headline */}
-        <div className="space-y-3">
-          <h1 className="text-5xl sm:text-6xl font-bold text-navy-900 dark:text-white tracking-tight">
-            Coming <span className="text-amber-500 dark:text-amber-400">Soon</span>
-          </h1>
-          <p className="text-gray-600 dark:text-zinc-400 text-lg leading-relaxed">
-            Your neighborhood destination for shipping, professional packing, private mailboxes, printing, and everyday business services. We&apos;re getting ready to serve Winchester and the surrounding communities.
-          </p>
-        </div>
-
-        {/* Services preview */}
-        <div className="flex flex-wrap justify-center gap-2">
-          {["Shipping", "Custom Packing", "Printing", "Mailbox Services"].map((s) => (
-            <span
-              key={s}
-              className="rounded-full border border-navy-200 bg-navy-50 px-4 py-1.5 text-xs font-semibold text-gray-600 dark:border-navy-700 dark:bg-navy-800/60 dark:text-zinc-300"
-            >
-              {s}
-            </span>
-          ))}
-        </div>
-
-        {/* Contact */}
-        <div className="rounded-2xl border border-navy-200 bg-white/80 backdrop-blur-sm p-6 space-y-4 dark:border-navy-700 dark:bg-navy-900/80">
-          <p className="text-sm font-semibold text-navy-900 dark:text-white uppercase tracking-widest text-xs">
-            Get in touch now
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="tel:+15406947447"
-              className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-amber-300 transition-colors"
-            >
-              📞 (540) 694-7447
-            </a>
-            <a
-              href="mailto:admin@winchesterpackandship.com"
-              className="rounded-full border border-navy-200 px-6 py-3 text-sm font-semibold text-gray-700 hover:border-gray-400 hover:text-navy-900 transition-colors dark:border-navy-700 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:text-white"
-            >
-              ✉️ Send us an email
-            </a>
-          </div>
-
-          <p className="text-xs text-gray-400 dark:text-zinc-500">
-            Mon – Fri 10am–7pm &nbsp;·&nbsp; Sat 10am–4pm &nbsp;·&nbsp; Winchester, VA
-          </p>
-          <p className="text-xs text-gray-400 dark:text-zinc-500">
-            📍 2261 Valley Ave, Winchester, VA 22601
-          </p>
-        </div>
+      {/* Mobile sticky bottom bar */}
+      <div className="sm:hidden fixed bottom-0 left-0 right-0 z-50 flex gap-2 p-3 bg-white/95 backdrop-blur-sm border-t border-navy-200 dark:bg-navy-950/95 dark:border-navy-700">
+        <a
+          href="tel:+15406947447"
+          className="flex-1 rounded-full border border-navy-200 py-3 text-sm font-semibold text-gray-800 text-center hover:border-amber-400 transition-colors dark:border-navy-700 dark:text-zinc-200"
+        >
+          📞 Call Us
+        </a>
+        <a
+          href="mailto:admin@winchesterpackandship.com"
+          className="flex-1 rounded-full bg-amber-400 py-3 text-sm font-semibold text-zinc-950 text-center hover:bg-amber-300 transition-colors"
+        >
+          ✉️ Email Us
+        </a>
       </div>
-    </main>
+    </>
   );
 }
