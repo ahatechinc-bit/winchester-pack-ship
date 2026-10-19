@@ -16,6 +16,7 @@ export default function Footer() {
         <div className="flex gap-6">
           <a href="#services" className="hover:text-gray-200 transition-colors">Services</a>
           <a href="/document-services" className="hover:text-gray-200 transition-colors">Document Services</a>
+          <a href="/mailbox-rental" className="hover:text-gray-200 transition-colors">Mailbox Rental</a>
           <a href="#about" className="hover:text-gray-200 transition-colors">About</a>
           <a href="#contact" className="hover:text-gray-200 transition-colors">Contact</a>
         </div>

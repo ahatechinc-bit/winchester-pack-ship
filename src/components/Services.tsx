@@ -42,6 +42,7 @@ const services: Service[] = [
     title: "Mailbox Services",
     description:
       "Get a secure, private mailbox address. Accept packages from any carrier, receive mail, and manage deliveries on your schedule.",
+    link: "/mailbox-rental",
   },
   {
     icon: "🟫",
